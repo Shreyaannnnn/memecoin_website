@@ -15,7 +15,7 @@ const AboutPage = () => {
           Before Pepe was widely recognized, Smug Frog was the true OG on 4chan. 
           People used the smug, self-satisfied frog to express superiority and mock others 
           without knowing it was actually a version of Pepe. To many, Smug Frog was the original, 
-          defining meme before Pepe's full identity and origins became known.
+          defining meme before Pepe&apos;s full identity and origins became known.
         </p>
       </div>
       <img

@@ -1,10 +1,17 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import "../app/globals.css"
+import { Press_Start_2P } from 'next/font/google';
 
+const pressStart2P = Press_Start_2P({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+  });
 function BlueScreenError() {
   return (
-    <div className="min-h-screen bg-[#0000AA] flex flex-col items-center justify-center" >
+    <div className={` ${pressStart2P.className} min-h-screen bg-[#0000AA] flex flex-col items-center justify-center`}>
         <p className="text-center text-2xl text-[#0000AA] bg-gray-300 p-2 shadow-sm shadow-gray-200 " >Windows</p>
     <div className=" flex  items-center ">
       <motion.div

@@ -1,8 +1,15 @@
 import React from 'react';
+import "../app/globals.css"
+import { Press_Start_2P } from 'next/font/google';
 
+const pressStart2P = Press_Start_2P({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+  });
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-[#007A39] relative flex items-center justify-center">
+    <div className={` ${pressStart2P.className} min-h-screen bg-[#007A39] relative flex items-center justify-center`}>
       <div className="max-w-[60%] px-4">
         <p className="text-justify text-[22px] sm:text-[24px] md:text-[28px] lg:text-[2vw] pixel-font text-black">
           Before Pepe was widely recognized, Smug Frog was the true OG on 4chan. 

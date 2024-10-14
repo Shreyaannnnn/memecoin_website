@@ -1,13 +1,11 @@
-import AboutPage from "@/pages/AboutPage";
+import Start from "./components/Start";
 
 
 
 export default function Home() {
   return (
     <div className="" >
-      {/* <WindowPage/> */}
-      {/* <BlueScreenError/> */}
-      <AboutPage/>
+      <Start/>
     </div>
   );
 }

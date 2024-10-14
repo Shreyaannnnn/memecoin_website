@@ -3,9 +3,18 @@ import NothingToSaveModal from '@/app/components/NothingToSave'
 import SaveBeforeClosingModal from '@/app/components/SaveBeforeClosing'
 import TryAgainModal from '@/app/components/TryAgain'
 import React from 'react'
+import "../app/globals.css"
+import Link from 'next/link'
+import { Press_Start_2P } from 'next/font/google';
+
+const pressStart2P = Press_Start_2P({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+  });
 const WindowPage = () => {
   return (
-    <div className="relative  bg-[#0D8D4F] min-h-screen" >
+<div className={`${pressStart2P.className} relative bg-[#0D8D4F] min-h-screen`}>
         <div className="absolute z-0 top-16 left-[20vw]" >
             <NotFoundModal/>
         </div>
@@ -33,10 +42,12 @@ const WindowPage = () => {
                 <p className="w-[80%] text-center" >Know your meme</p>
                 </div>
 
+                <Link href="/AboutPage" >
                 <div className="mt-[4vw]" >
                 <img src="/folder_image.png" className="w-[8vw] h-[8vw]  " alt="" />
                 <p className="text-center" >About</p>
                 </div>
+                </Link>
             
             </div>
 
@@ -54,11 +65,12 @@ const WindowPage = () => {
             </div>
         </div>
 
-
+        <Link href="/ErrorPage" >
         <div className="absolute bottom-[15vw] right-[2vw] " >
                 <img src="/folder_image.png" className="w-[8vw] h-[8vw]  " alt="" />
                 <p className="text-center">DO NOT OPEN</p>
         </div>
+        </Link>
 
         <div className="absolute bottom-[4vw] right-[10vw] " >
                 <img src="/folder_image.png" className="w-[8vw] h-[8vw]  " alt="" />

@@ -1,8 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
-
+import Link from 'next/link'; // Import Link from Next.js
 function Start() {
   const [clicked, setClicked] = useState(false);
 
@@ -19,26 +18,24 @@ function Start() {
   };
 
   return (
-    <div
-      className="min-h-screen  bg-[#0D8D4F] bg-center flex flex-col items-center justify-center relative"
-    //   style={{ backgroundImage: 'url(/bg-image.png)' }} // Set background image here
-    >
-      {/* Minecraft-like Button */}
-      <motion.button
-        onClick={handleClick}
-        className={`text-white font-bold text-2xl rounded-md shadow-lg transition-transform 
-        ${clicked ? 'scale-90' : 'scale-100'} `}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <img src="/start-btn.png" className="w-full h-full" alt="" />
-      </motion.button>
+    <div className="min-h-screen bg-[#0D8D4F] bg-center flex flex-col items-center justify-center relative">
+      {/* Link wraps the button for navigation */}
+      <Link href="/WindowPage" >
+        <motion.button
+          onClick={handleClick}
+          className={`text-white font-bold text-2xl rounded-md shadow-lg transition-transform 
+          ${clicked ? 'scale-90' : 'scale-100'}`}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <img src="/start-btn.png" className="w-full h-full" alt="" />
+        </motion.button>
+      </Link>
 
       {/* Text Under the Button */}
       <p className="mt-24 text-lg md:xl lg:text-2xl text-black cursor-pointer">
         Ox3F9929ffFO911c298B9D607b1623b721eE267a88
       </p>
-
 
       {/* Image in Bottom Left Corner */}
       <img

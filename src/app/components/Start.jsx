@@ -28,12 +28,12 @@ function Start() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <img src="/start-btn.png" className="w-full h-full" alt="" />
+          <img src="/start-btn.png" className=" w-[55vw] h-[15vw] md:w-[22vw] md:h-[6vw] lg:w-[20vw] lg:h-[5vw]" alt="" />
         </motion.button>
       </Link>
 
       {/* Text Under the Button */}
-      <p className="mt-24 text-lg md:xl lg:text-2xl text-black cursor-pointer">
+      <p className=" mt-16 md:mt-24 text-[2.3vw] md:text-xl lg:text-2xl text-black cursor-pointer">
         Ox3F9929ffFO911c298B9D607b1623b721eE267a88
       </p>
 
@@ -41,7 +41,7 @@ function Start() {
       <img
         src="/song_icon.png"
         alt="Minecraft Logo"
-        className="absolute bottom-20 left-4 h-24"
+        className="absolute bottom-10 left-0 md:bottom-20 md:left-4 h-16 md:h-24"
       />
     </div>
   );

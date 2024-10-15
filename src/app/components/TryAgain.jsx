@@ -6,7 +6,7 @@ function TryAgainModal() {
   return (
     <div className="relative">
       <motion.div
-        className="bg-[#F0F0F0] w-[35vw] absolute border-4 border-black"
+        className="bg-[#F0F0F0] w-[30vw] absolute border-4 border-black"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}

@@ -6,7 +6,7 @@ function SaveBeforeClosingModal() {
   return (
     <div className=" relative">
       <motion.div
-        className="bg-[#F0F0F0] w-[35vw] absolute  border-4 border-black"
+        className="bg-[#F0F0F0] w-[30vw] absolute  border-4 border-black"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -34,7 +34,7 @@ function SaveBeforeClosingModal() {
 
 
       <motion.div
-        className="bg-[#F0F0F0] w-[35vw] absolute top-4 left-4  rounded-lg shadow-lg border-4 border-black"
+        className="bg-[#F0F0F0] w-[30vw] absolute top-4 left-4  rounded-lg shadow-lg border-4 border-black"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -61,7 +61,7 @@ function SaveBeforeClosingModal() {
       </motion.div>
 
       <motion.div
-        className="bg-[#F0F0F0] w-[35vw] absolute top-8 left-8  rounded-lg shadow-lg border-4 border-black"
+        className="bg-[#F0F0F0] w-[30vw] absolute top-8 left-8  rounded-lg shadow-lg border-4 border-black"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -88,7 +88,7 @@ function SaveBeforeClosingModal() {
       </motion.div>
 
       <motion.div
-        className="bg-[#F0F0F0] w-[35vw] absolute top-12 left-12  rounded-lg shadow-lg border-4 border-black"
+        className="bg-[#F0F0F0] w-[30vw] absolute top-12 left-12  rounded-lg shadow-lg border-4 border-black"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}

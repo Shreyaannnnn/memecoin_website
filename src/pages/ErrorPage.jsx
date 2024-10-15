@@ -12,8 +12,21 @@ const pressStart2P = Press_Start_2P({
 function BlueScreenError() {
   return (
     <div className={` ${pressStart2P.className} min-h-screen bg-[#0000AA] flex flex-col items-center justify-center`}>
-        <p className="text-center text-2xl text-[#0000AA] bg-gray-300 p-2 shadow-sm shadow-gray-200 " >Windows</p>
-    <div className=" flex  items-center ">
+<motion.p
+      className="text-center text-2xl text-[#0000AA] bg-gray-300 p-2 shadow-sm shadow-gray-200"
+      initial={{ opacity: 1 }}
+      animate={{
+        opacity: [1, 0.5, 1], // Flickering effect by changing opacity
+      }}
+      transition={{
+        duration: 0.5, // Duration of one flicker
+        repeat: Infinity, // Repeat indefinitely
+        repeatType: "loop", // Set to loop
+        ease: "easeInOut", // Ease for a smoother effect
+      }}
+    >
+      Windows
+    </motion.p>    <div className=" flex  items-center ">
       <motion.div
         className="text-[#FFFFFF] mx-[5vw] w-[80%] text-2xl text-left p-6"
         initial={{ opacity: 0 }}
@@ -29,8 +42,21 @@ function BlueScreenError() {
         <p className="mb-[2vw]">Error: 0E : 016F : BFF9B3D4</p>
       </motion.div>
     </div>
-        <p className="text-center text-2xl text-white " >Press any key to continue _</p>
-
+    <p className="text-center text-2xl text-white">
+  <motion.span
+    initial={{ opacity: 1 }}
+    animate={{
+      opacity: [1, 0.5, 1], // Flickering effect by changing opacity
+    }}
+    transition={{
+      duration: 0.5, // Duration of one flicker
+      repeat: Infinity, // Repeat indefinitely
+      ease: "easeInOut", // Smooth transition
+    }}
+  >
+    Press any key to continue _
+  </motion.span>
+</p>
     </div>
   );
 }

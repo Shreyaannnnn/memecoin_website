@@ -30,12 +30,12 @@ function Start() {
       <img 
         src="/gliters.png" 
         alt="Glitter" 
-        className="absolute top-0 left-0 w-[80%]"
+        className="absolute top-0 left-0 "
       />
-      <img 
+      <img
         src="/gliters.png" 
         alt="Glitter" 
-        className="absolute top-0 right-0 w-[80%]"
+        className="absolute top-0 right-0 "
       />
       <Link href="/WindowPage">
         <motion.button

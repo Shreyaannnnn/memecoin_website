@@ -6,7 +6,7 @@ function SaveBeforeClosingModal() {
   return (
     <div className=" relative">
       <motion.div
-        className=" w-[40vw] md:w-[35vw] lg:w-[30vw] absolute  "
+        className=" w-[40vw] md:w-[30vw] lg:w-[25vw] absolute  "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -17,7 +17,7 @@ function SaveBeforeClosingModal() {
 
 
       <motion.div
-        className=" w-[40vw] md:w-[35vw] lg:w-[30vw] absolute top-4 left-4  "
+        className=" w-[40vw] md:w-[30vw] lg:w-[25vw] absolute top-4 left-4  "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -28,7 +28,7 @@ function SaveBeforeClosingModal() {
       </motion.div>
 
       <motion.div
-        className="w-[40vw] md:w-[35vw] lg:w-[30vw] absolute top-8 left-8  "
+        className="w-[40vw] md:w-[30vw] lg:w-[25vw] absolute top-8 left-8  "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -39,7 +39,7 @@ function SaveBeforeClosingModal() {
       </motion.div>
 
       <motion.div
-        className="w-[40vw] md:w-[35vw] lg:w-[30vw] absolute top-12 left-12  "
+        className="w-[40vw] md:w-[30vw] lg:w-[25vw] absolute top-12 left-12  "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}

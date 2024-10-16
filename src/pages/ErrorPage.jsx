@@ -28,7 +28,7 @@ function BlueScreenError() {
       Windows
     </motion.p>    <div className=" flex  items-center ">
       <motion.div
-        className="text-[#FFFFFF] mx-[5vw] w-[80%] text-2xl text-left p-6"
+        className="text-[#FFFFFF] mx-[5vw] w-[80%] text-xl md:text-2xl lg:text-2xl text-left p-2 md:p-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}

@@ -69,7 +69,7 @@ function Start() {
         </motion.button>
       </Link>
 
-      <p className="mt-16 md:mt-24 text-[2.3vw] md:text-xl lg:text-2xl text-black cursor-pointer">
+      <p className="mt-16 md:mt-24 text-[2.3vw] md:text-xl lg:text-2xl text-black cursor-pointer z-10">
         Ox3F9929ffFO911c298B9D607b1623b721eE267a88
       </p>
 

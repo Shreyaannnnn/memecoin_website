@@ -32,7 +32,7 @@ const WindowPage = () => {
       {/* Main content layout */}
       <div className="flex min-h-screen">
   {/* Folders section */}
-  <div className="flex flex-col min-h-screen justify-between py-10 ml-4">
+  <div className="flex flex-col min-h-screen justify-around py-10 ml-4">
     {/* Dexscreener Folder */}
     <Link href="https://dexscreener.com/ethereum/0xd56ce7a608a2bc865dfab82ec22c02ec1c757ac0?__cf_chl_rt_tk=9d8SklMDbHuaQeGH3rdx_IeSuJkubGggA7OahmZ_yx4-1729101657-1.0.1.1-DTGllecUHjXZcxn35.Oek6sXAXdmyGp7cVyBGJtAiIw" target='_blank' >
     <div className="flex flex-col items-center text-center">
@@ -76,7 +76,7 @@ const WindowPage = () => {
 
   {/* Bottom Right Error Link */}
   <Link href="/Error">
-    <div className="absolute bottom-[20%] right-[2%] flex flex-col items-center text-center">
+    <div className="absolute md:bottom-[25vh] right-[2%] flex flex-col items-center text-center">
       <img
         src="/folder_image.png"
         className="h-8 w-10 md:h-16 md:w-20 lg:h-20 lg:w-24"
@@ -88,7 +88,7 @@ const WindowPage = () => {
 
   {/* Memes Folder */}
   <Link href="/Meme">
-  <div className="absolute bottom-[2%] right-[15%] flex flex-col items-center text-center">
+  <div className="absolute bottom-[5%] sm:mb-[20vh] xs:mb-[20vh] right-[15%] flex flex-col items-center text-center">
     <img
       src="/folder_image.png"
       className="h-8 w-10 md:h-16 md:w-20 lg:h-20 lg:w-24"
@@ -98,7 +98,7 @@ const WindowPage = () => {
   </div>
   </Link>
 
-  <div className="flex max-h-screen flex-col-reverse space-y-14 mb-5 space-y-reverse">
+  <div className="flex max-h-screen flex-col-reverse space-y-14 mb-5 md:mb-[5vh] sm:mb-[20vh] xs:mb-[20vh] space-y-reverse">
     <Link href="https://x.com/smugthepepe" target='_blank' >
     <div className="flex flex-col items-center text-center">
       <img

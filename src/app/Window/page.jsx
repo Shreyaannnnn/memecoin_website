@@ -87,14 +87,16 @@ const WindowPage = () => {
   </Link>
 
   {/* Memes Folder */}
+  <Link href="/Meme">
   <div className="absolute bottom-[2%] right-[15%] flex flex-col items-center text-center">
     <img
       src="/folder_image.png"
       className="h-8 w-10 md:h-16 md:w-20 lg:h-20 lg:w-24"
       alt="Memes"
     />
-    <p className="mt-2 text-[8px] md:text-sm">Memes</p>
+    <p className="mt-2 text-[8px] md:text-sm">Biggest meme</p>
   </div>
+  </Link>
 
   <div className="flex max-h-screen flex-col-reverse space-y-14 mb-5 space-y-reverse">
     <Link href="https://x.com/smugthepepe" target='_blank' >

@@ -48,7 +48,7 @@ const WindowPage = () => {
 
     {/* Know Your Meme and About Folders */}
     <div className="flex space-x-5">
-      <Link href="https://knowyourmeme.com/memes/smug-frog/photos" target='_blank' ></Link>
+      <Link href="https://knowyourmeme.com/memes/smug-frog/photos" target='_blank' >
       <div className="flex flex-col items-center text-center">
         <img
           src="/folder_image.png"
@@ -57,6 +57,7 @@ const WindowPage = () => {
         />
         <p className="mt-2 w-20 text-[8px] md:text-sm">Know Your Meme</p>
       </div>
+      </Link>
     </div>
 
     {/* Telegram and X Folders */}

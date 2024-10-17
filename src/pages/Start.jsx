@@ -12,6 +12,7 @@ function Start() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       audioRef.current = new Audio('/song_bg.mp3'); // Initialize the audio
+      audioRef.current.loop = true; // Loop the song
     }
   }, []);
 
@@ -69,8 +70,9 @@ function Start() {
         Ox3F9929ffFO911c298B9D607b1623b721eE267a88
       </p>
 
+      {/* Song Control Icon */}
       <img
-        src="/song_icon.png"
+        src="/song_icon.png"// Change icon based on play state
         alt="Song Icon"
         className="absolute bottom-10 left-0 md:bottom-20 md:left-4 h-16 md:h-24 cursor-pointer"
         onClick={toggleSong} // Toggle song on click

@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import MusicContext from '../components/MusicContext';
 import { useContext } from 'react';
 function Start() {
@@ -19,14 +19,26 @@ function Start() {
 
   const handleClick = () => {
     setClicked(true);
+    toggleMusic();
+    console.log('log');
+    
     const clickSound = new Audio('/minecraft_click.mp3'); // Click sound
     clickSound.play();
 
     // Reset the clicked state after a short delay to reset the animation
     setTimeout(() => {
       setClicked(false);
+      
     }, 200);
   };
+
+//   useEffect(() => {
+//     // This function will run once when the page loads
+//     toggleMusic
+//     console.log('togle');
+    
+//     // Your page load logic here
+// }, []);
 
   // const toggleSong = () => {
   //   if (audioRef.current) {

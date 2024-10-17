@@ -8,6 +8,7 @@ export const MusicProvider = ({ children }) => {
 
   useEffect(() => {
     const audio = new Audio('/song_bg.mp3');
+    // setIsPlaying(true)
     if (isPlaying) {
       audio.play();
     } else {

@@ -86,12 +86,12 @@ function Start() {
       </p>
 
       {/* Song Control Icon */}
-      <img
+      {/* <img
         src="/song_icon.png"// Change icon based on play state
         alt="Song Icon"
         className="absolute bottom-10 left-0 md:bottom-20 md:left-4 h-16 md:h-24 cursor-pointer"
         onClick={toggleMusic} // Toggle song on click
-      />
+      /> */}
     </div>
   );
 }

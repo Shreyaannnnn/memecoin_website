@@ -1,4 +1,5 @@
-import Start from "../pages/Start";
+import Start from "../app/Start/page";
+
 export default function Home() {
   return (
     <div className="" >

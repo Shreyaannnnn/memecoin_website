@@ -1,7 +1,6 @@
 import "./globals.css";
-
 import { Press_Start_2P } from 'next/font/google';
-
+import { MusicProvider } from '../app/components/MusicContext'; // Import the MusicProvider
 
 export const metadata = {
   title: "Create Next App",
@@ -17,10 +16,10 @@ const pressStart2P = Press_Start_2P({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={ pressStart2P.className}
-      >
-        {children}
+      <body className={pressStart2P.className}>
+        <MusicProvider> {/* Wrap the layout with MusicProvider */}
+          {children}
+        </MusicProvider>
       </body>
     </html>
   );

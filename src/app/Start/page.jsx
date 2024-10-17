@@ -1,20 +1,21 @@
 'use client';
-import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
+import {useState} from 'react'
+import MusicContext from '../components/MusicContext';
+import { useContext } from 'react';
 function Start() {
   const [clicked, setClicked] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false); // Track if the song is playing
-  const audioRef = useRef(null); // Ref to store the audio instance
+  // const [isPlaying, setIsPlaying] = useState(false); // Track if the song is playing
+  // const audioRef = useRef(null); // Ref to store the audio instance
 
-  // Ensure audio initialization only runs on the client side
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      audioRef.current = new Audio('/song_bg.mp3'); // Initialize the audio
-      audioRef.current.loop = true; // Loop the song
-    }
-  }, []);
+  // // Ensure audio initialization only runs on the client side
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     audioRef.current = new Audio('/song_bg.mp3'); // Initialize the audio
+  //     audioRef.current.loop = true; // Loop the song
+  //   }
+  // }, []);
 
   const handleClick = () => {
     setClicked(true);
@@ -27,16 +28,18 @@ function Start() {
     }, 200);
   };
 
-  const toggleSong = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause(); // Pause the song
-      } else {
-        audioRef.current.play(); // Play the song
-      }
-      setIsPlaying(!isPlaying); // Toggle play state
-    }
-  };
+  // const toggleSong = () => {
+  //   if (audioRef.current) {
+  //     if (isPlaying) {
+  //       audioRef.current.pause(); // Pause the song
+  //     } else {
+  //       audioRef.current.play(); // Play the song
+  //     }
+  //     setIsPlaying(!isPlaying); // Toggle play state
+  //   }
+  // };
+
+  const { isPlaying, toggleMusic } = useContext(MusicContext);
 
   return (
     <div
@@ -50,7 +53,7 @@ function Start() {
       <img src="/gliters.png" alt="Glitter" className="absolute top-0 left-0" />
       <img src="/gliters.png" alt="Glitter" className="absolute top-0 right-0" />
 
-      <Link href="/WindowPage">
+      <Link href="/Window">
         <motion.button
           onClick={handleClick}
           className={`text-white font-bold text-2xl rounded-md shadow-lg transition-transform 
@@ -75,7 +78,7 @@ function Start() {
         src="/song_icon.png"// Change icon based on play state
         alt="Song Icon"
         className="absolute bottom-10 left-0 md:bottom-20 md:left-4 h-16 md:h-24 cursor-pointer"
-        onClick={toggleSong} // Toggle song on click
+        onClick={toggleMusic} // Toggle song on click
       />
     </div>
   );

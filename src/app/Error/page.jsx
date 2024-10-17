@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Import useRouter
 import { motion } from 'framer-motion';
-import "../app/globals.css";
 import { Press_Start_2P } from 'next/font/google';
 
 const pressStart2P = Press_Start_2P({
@@ -16,7 +15,7 @@ function BlueScreenError() {
 
   // Add a key press event listener on component mount
   useEffect(() => {
-    const handleKeyPress = (event) => {
+    const handleKeyPress = (_event) => {
       router.push('/'); // Redirect to the home page on any key press
     };
 

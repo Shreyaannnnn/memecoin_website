@@ -3,7 +3,6 @@ import NothingToSaveModal from '@/app/components/NothingToSave';
 import SaveBeforeClosingModal from '@/app/components/SaveBeforeClosing';
 import TryAgainModal from '@/app/components/TryAgain';
 import React from 'react';
-import '../app/globals.css';
 import Link from 'next/link';
 import { Press_Start_2P } from 'next/font/google';
 
@@ -76,7 +75,7 @@ const WindowPage = () => {
   </div>
 
   {/* Bottom Right Error Link */}
-  <Link href="/ErrorPage">
+  <Link href="/Error">
     <div className="absolute bottom-[20%] right-[2%] flex flex-col items-center text-center">
       <img
         src="/folder_image.png"
@@ -109,7 +108,7 @@ const WindowPage = () => {
     </div>
     </Link>
 
-    <Link href="/AboutPage">
+    <Link href="/About">
       <div className="flex flex-col items-center text-center">
         <img
           src="/folder_image.png"

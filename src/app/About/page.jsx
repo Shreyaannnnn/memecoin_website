@@ -1,5 +1,4 @@
 import React from 'react';
-import "../app/globals.css"
 import { Press_Start_2P } from 'next/font/google';
 
 const pressStart2P = Press_Start_2P({

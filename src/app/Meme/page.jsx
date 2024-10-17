@@ -14,4 +14,4 @@ const MemePage = () => {
   );
 };
 
-export default AboutPage;
+export default MemePage;
